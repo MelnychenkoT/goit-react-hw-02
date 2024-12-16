@@ -1,0 +1,17 @@
+.feedbackList,
+.feedbackStatsList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.feedbackStatsList {
+  margin-top: 10px;
+}
+
+.feedbackItem {
+  color: #1952ee;
+  font-weight: 500;
+  display: flex;
+  align-self: center;
+}
