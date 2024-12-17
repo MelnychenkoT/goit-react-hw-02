@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from './Options.module.css';
+import css from './Options.module.css'
 
 const Options = ({
   onClickFeedback,
@@ -8,17 +8,12 @@ const Options = ({
   options,
 }) => {
   return (
-    <ul style={{
-        display: 'flex', 
-        justifyContent: 'left', 
-        gap: "10px", 
-        marginBottom: "15px", 
-        marginTop: "15px"}}>
+    <ul className={css.list}>
       {options.map(option => (
-        <li key={option} className={css.optionsItem}>
+        <li key={option} >
           <button
             onClick={() => onClickFeedback(option)}
-            className={css.optionsBtn}
+            className={css.btn}
             type="button"
           >
             {option[0].toUpperCase() + option.slice(1)}
@@ -26,10 +21,10 @@ const Options = ({
         </li>
       ))}
       {allFeedback && (
-        <li className={css.optionsItem}>
+        <li>
           <button
             onClick={onResetFeedback}
-            className={css.optionsBtn}
+            className={css.btn}
             type="button"
           >
             Reset
