@@ -8,7 +8,12 @@ const Options = ({
   options,
 }) => {
   return (
-    <ul className={css.optionsListBtn}>
+    <ul style={{
+        display: 'flex', 
+        justifyContent: 'left', 
+        gap: "10px", 
+        marginBottom: "15px", 
+        marginTop: "15px"}}>
       {options.map(option => (
         <li key={option} className={css.optionsItem}>
           <button
