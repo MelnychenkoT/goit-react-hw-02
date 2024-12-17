@@ -8,7 +8,7 @@ const Options = ({
   options,
 }) => {
   return (
-    <ul className={css.optionsList}>
+    <ul className={css.optionsListBtn}>
       {options.map(option => (
         <li key={option} className={css.optionsItem}>
           <button
