@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import css from './Options.module.css'
+import css from './Op.module.css'
+// import css from './Options.module.css'
 
 const Options = ({
   onClickFeedback,
@@ -8,13 +9,7 @@ const Options = ({
   options,
 }) => {
   return (
-    <ul style={{
-        display: 'flex',
-        justifyContent: 'left',
-        gap: '10px',
-        marginbottom: '15px',
-        marginTop: '15px',
-    }}>
+    <ul className={css.list}>
       {options.map(option => (
         <li key={option} >
           <button
